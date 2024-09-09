@@ -1,4 +1,5 @@
 let errorData;
+let currentStep = null;
 
 // โหลดไฟล์ JSON
 fetch('errorCodes.json')
@@ -40,9 +41,9 @@ function searchErrorCode() {
     // แสดงรายละเอียดของ Error Code
     descriptionSection.innerHTML = `<p>${currentError.description}</p>`;
     currentStep = currentError.steps[0];  // เริ่มที่คำถามแรก
+    imageSection.innerHTML = "";   // เคลียร์ภาพเก่า
     showCurrentStep();  // แสดงคำถามแรก
     answerSection.innerHTML = "";  // เคลียร์คำแนะนำเก่า
-    imageSection.innerHTML = "";   // เคลียร์ภาพเก่า
   } else {
     descriptionSection.innerHTML = "<p>Error Code ไม่ถูกต้อง</p>";
     questionSection.innerHTML = "";
@@ -55,6 +56,9 @@ function showCurrentStep() {
   const questionSection = document.getElementById("questionSection");
   const imageSection = document.getElementById("imageSection");
 
+  // เคลียร์รูปภาพก่อนทุกครั้ง
+  imageSection.innerHTML = "";
+
   // ถ้ามีคำถาม
   if (currentStep && currentStep.question) {
     const answers = Object.keys(currentStep.answers);
@@ -63,21 +67,18 @@ function showCurrentStep() {
       ${answers.map(answer => `<button onclick="handleAnswer('${answer}')">${answer}</button>`).join('')}
     `;
 
-    // แสดงรูปภาพในคำถาม
+    // แสดงรูปภาพในคำถาม ถ้ามีรูปภาพใน currentStep
     if (currentStep.image) {
       imageSection.innerHTML = `<img src="${currentStep.image}" alt="Question Image">`;
-    } else {
-      imageSection.innerHTML = "";  // ถ้าไม่มีรูปภาพ ให้เคลียร์ภาพ
     }
   } else if (currentStep && currentStep.action) {
+    // ถ้าเป็นขั้นตอนสุดท้าย
     questionSection.innerHTML = "<p>การตรวจสอบเสร็จสิ้น</p>";
     document.getElementById("answerSection").innerHTML = `<p>คำแนะนำ: ${currentStep.action}</p>`;
     
     // แสดงรูปภาพในคำแนะนำ
     if (currentStep.image) {
       imageSection.innerHTML = `<img src="${currentStep.image}" alt="Action Image">`;
-    } else {
-      imageSection.innerHTML = "";
     }
   }
 }
