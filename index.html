@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบช่วยช่างซ่อมแอร์</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>ระบบช่วยช่างซ่อม Vending Machine</h1>
+  <h3>Demo Version by Toon RD</h3>
+  <div class="input-section">
+    <select id="errorCodeDropdown" style="width: 300px;">
+      <option value="" disabled selected>กรุณาเลือก Error Code</option>
+    </select>
+    <button onclick="searchErrorCode()">ค้นหา</button>
+  </div>
+
+  <div id="descriptionSection"></div>
+  <div id="questionSection"></div>
+  <div id="answerSection"></div>
+  <div id="imageSection"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00d1b2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+    background: linear-gradient(45deg, #00d1b2, #00ffcc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #00d1b2;
+    border-radius: 6px;
+    background-color: #1e1e2f;
+    color: #fff;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus {
+    border-color: #ff3860;
+    box-shadow: 0 0 8px rgba(255, 56, 96, 0.7);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(45deg, #00d1b2, #00ffcc);
+    color: #fff;
+    border-radius: 50px;
+    margin: 15px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff3860, #ff6f61);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Section สำหรับแสดงคำถามและคำตอบ */
+#descriptionSection,
+#questionSection,
+#answerSection,
+#imageSection {
+    margin-top: 30px;
+    padding: 10px;
+    /*background-color: #282a36;*/
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+#answerSection {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ff3860;
+}
+
+/* การจัดการรูปภาพ */
+img {
+    max-width: 80%;
+    height: auto;
+    border: 3px solid #00d1b2;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: #cdd1e1;
+}
+
+.select2-selection__clear {
+    display: none !important;
+    /* ซ่อนปุ่มเคลียร์ */
+}
+
+/* เปลี่ยนสีข้อความในรายการ dropdown */
+.select2-results__option {
+    color: #fff;
+    /* เปลี่ยนสีข้อความในรายการเป็นสีขาว */
+    background-color: #282a36;
+    /* เปลี่ยนพื้นหลังของรายการ */
+}
+
+/* เปลี่ยนสีข้อความเมื่อมีการเลือก */
+.select2-selection__rendered {
+    color: #00d1b2;
+    /* เปลี่ยนสีข้อความเมื่อถูกเลือก */
+}
+
+/* เปลี่ยนพื้นหลังเมื่อรายการถูกเลือก */
+.select2-results__option--highlighted {
+    background-color: #00d1b2 !important;
+    /* เปลี่ยนสีพื้นหลังของรายการที่ถูกโฟกัส */
+    color: #fff !important;
+    /* เปลี่ยนสีข้อความของรายการที่ถูกโฟกัส */
+}
