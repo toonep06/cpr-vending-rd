@@ -8,7 +8,11 @@
             "question": "สายขาดหรือไม่?",
             "image": "assets/pic1.jpg",
             "answers": {
-              "ขาด": {
+              "งงครับเช็คไม่เป็น": {
+                "action": "ลาออกเถอะไอควาย",
+                "image": "https://th.bing.com/th/id/OIP.1qklLT8Moi1VHuqLxyo6ZgHaHa?rs=1&pid=ImgDetMain"
+              },
+                "ขาด": {
                 "action": "ต่อสายไฟ",
                 "image": "assets/pic2.jpg"
               },
