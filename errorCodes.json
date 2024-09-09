@@ -10,7 +10,7 @@
             "answers": {
               "ขาด": {
                 "action": "ต่อสายไฟ",
-                "image": "assets/pic1.jpg"
+                "image": "assets/pic2.jpg"
               },
               "ไม่ขาด": {
                 "question": "ตรวจสอบคาปาซิเตอร์ เสียหรือไม่?",
