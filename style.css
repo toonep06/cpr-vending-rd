@@ -2,13 +2,12 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1e1e2f;
-
 }
 
 /* Navbar */
 .navbar {
     padding: 1rem 2rem;
-    background-color: #1b1b2f; /* ปรับสีพื้นหลัง Navbar */
+    background-color: #1b1b2f;
 }
 
 /* ปรับให้ข้อความอยู่กึ่งกลางกับโลโก้ */
@@ -18,7 +17,7 @@ body {
 }
 
 .navbar-brand img {
-    margin-right: 10px; /* เพิ่มระยะห่างเล็กน้อยระหว่างโลโก้กับข้อความ */
+    margin-right: 10px;
 }
 
 .navbar-brand span {
@@ -45,7 +44,7 @@ body {
 
 /* หัวข้อหลัก (h1) */
 h1 {
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
     color: #00d1b2;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -74,30 +73,61 @@ button:hover {
     border-radius: 15px;
     border: none;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* ปรับ padding ภายใน card */
+    padding: 15px; /* ลด padding ภายใน card */
+    max-width: 100%;
+    
 }
 
-/* ปรับข้อความภายใน card */
-#descriptionSection, #questionSection, #answerSection, #imageSection {
-    margin-top: 10px;  /* ปรับระยะห่างให้แคบลง */
-    padding: 1rem;     /* ปรับ padding ของ section ให้เล็กลง */
-    background-color: #3b3b52;  /* พื้นหลังข้อความ */
+#descriptionSection, #questionSection {
+    margin-top: 10px;
+    padding: 1rem;
+    /*background-color: #3b3b52;*/
     color: #ffffff;
     border-radius: 10px;
-    max-width: 90%;   /* ปรับความกว้างของข้อความไม่ให้เกิน */
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* จัดกึ่งกลางในแนวตั้ง */
-    align-items: center;  /* จัดกึ่งกลางในแนวนอน */
-    text-align: center;  /* จัดข้อความให้อยู่กึ่งกลางในแนวนอน */
-    min-height: 50%;  /* ให้มีความสูงขั้นต่ำเพื่อดูว่ากลางแนวตั้งได้ชัดเจน */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
+#answerSection {
+    display: flex;
+    justify-content: space-between; /* จัดปุ่มให้ห่างกันและอยู่ที่ด้านซ้าย-ขวา */
+    width: 100%;
+}
+
+#answerSection button {
+    flex: 0 1 45%;  /* กำหนดให้แต่ละปุ่มมีขนาด 45% ของพื้นที่ */
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #00d1b2;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* ปรับระยะห่างระหว่างบรรทัด */
+p {
+    margin-bottom: 10px;
+    line-height: 1.5; /* ปรับระยะห่างระหว่างบรรทัดให้เหมาะสม */
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 /* ปุ่มคำตอบ */
 #answerSection button {
-    flex: 1 1 45%;  
+    flex: 1 1 45%;
     margin: 10px;
     padding: 10px 15px;
     font-size: 1.1rem;
@@ -109,12 +139,7 @@ button:hover {
 }
 
 #answerSection button:hover {
-    background-color: #00bfa5;
-}
-
-/* ปรับระยะห่างระหว่างบรรทัด */
-p {
-    line-height: 0; /* ปรับระยะห่างระหว่างบรรทัดให้แคบลง */
+    background-color: #00bfa5 ;
 }
 
 /* ปิดการแสดง card เมื่อไม่มีข้อมูล */
@@ -133,22 +158,23 @@ p {
 /* กำหนดรูปภาพทั่วไป ยกเว้นโลโก้ */
 img:not(.logo) {
     width: 60%;          /* ปรับขนาดความกว้างให้ครอบคลุมพื้นที่ที่กำหนด */
-    height: 35px;        /* กำหนดความสูงคงที่ */
-    object-fit: contain;    /* รักษาสัดส่วนของภาพโดยการครอบภาพให้เต็มพื้นที่ */
-    border-radius: 10px;  /* ปรับขอบมน */
+    height: auto;        /* ปรับความสูงให้เป็นอัตโนมัติเพื่อรักษาสัดส่วนของภาพ */
+    object-fit: contain;
+    border-radius: 10px;
     display: block;
-    margin: 10px auto;    /* จัดรูปภาพให้อยู่กึ่งกลาง */
+    margin: 10px auto;
 }
 
 /* การจัดการโลโก้ */
 .logo {
-    width: auto;   /* ปรับขนาดความกว้างตามสัดส่วนที่โลโก้ต้องการ */
-    height: 50px;  /* กำหนดความสูงเฉพาะสำหรับโลโก้ */
-    object-fit: contain;  /* รักษาสัดส่วนโดยไม่ครอบภาพ */
+    width: auto;
+    height: 50px;
+    object-fit: contain;
     display: block;
-    margin: 0;  /* ไม่ต้องจัดกลางโลโก้ */
+    margin: 0;
 }
+
 .custom-green {
-    color: #00FF00 !important; /* ใช้สีเขียวสดสว่าง */
+    color: #00FF00 !important;
     font-weight: bold;
 }
