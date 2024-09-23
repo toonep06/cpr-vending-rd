@@ -1,20 +1,16 @@
 {
     "errors": [
       {
-        "code": "255",
-        "description": "มอเตอร์ไม่หมุน",
+        "code": "01",
+        "description": "ไม่พบสวิสซ์ล็อก (โซลินอยด์ล็อกประตู) ขณะปิดประตู",
         "steps": [
           {
-            "question": "สายขาดหรือไม่?",
+            "question": "ประตูรับสินค้าปิดสนิทหรือไม่?",
             "image": "assets/pic1.jpg",
             "answers": {
-              "งงครับเช็คไม่เป็น": {
-                "action": "ลาออกเถอะไอควาย",
-                "image": "https://th.bing.com/th/id/OIP.1qklLT8Moi1VHuqLxyo6ZgHaHa?rs=1&pid=ImgDetMain"
-              },
-                "ขาด": {
-                "action": "ต่อสายไฟ",
-                "image": "assets/pic2.jpg"
+              "ปิดสนิท": {
+              "action": "เช็คสายไฟของโซลินอยด์",
+              "image": "assets/pic2.jpg"
               },
               "ไม่ขาด": {
                 "question": "ตรวจสอบคาปาซิเตอร์ เสียหรือไม่?",
