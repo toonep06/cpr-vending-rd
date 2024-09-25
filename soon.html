@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coming Soon</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+
+        .coming-soon {
+            text-align: center;
+        }
+
+        .coming-soon h1 {
+            font-size: 5rem;
+            color: #343a40;
+        }
+
+        .coming-soon p {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+
+        #countdown {
+            font-size: 3rem;
+            color: #ff6347;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-50">
+
+    <div class="coming-soon mt-5">
+        <h1>Coming Soon</h1>
+        <p>We're working on something great. Stay tuned!</p>
+        <p id="countdown">5</p> <!-- แสดงผลการนับถอยหลัง -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript สำหรับการนับถอยหลัง -->
+    <script>
+        let countdown = 20; // เริ่มนับถอยหลังจาก 5 วินาที
+        const countdownElement = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            countdown--; // ลดค่านับถอยหลังทีละ 1
+            countdownElement.textContent = countdown;
+
+            if (countdown <= 0) {
+                clearInterval(timer); // หยุดการนับถอยหลัง
+                window.location.href = "index.html"; // กลับไปที่หน้า index.html
+            }
+        }, 1000); // ทำงานทุก 1 วินาที
+    </script>
+    <a href="index.html" class="btn btn btn-primary"> Back to Home Page</a>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4 bg-light">
+        <div class="container text-center">
+            <p>&copy; 2024 TechSolve. All rights reserved By Tony.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
