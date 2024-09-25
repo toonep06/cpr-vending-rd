@@ -151,3 +151,12 @@ function showAbout() {
         backdrop: true
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('loggedIn')) {
+        //alert('You are already logged in!');
+       // window.location.href = 'index.html'; // เปลี่ยนเส้นทางไปยังหน้าอื่น
+    }else{
+        window.location.href = 'login.html';
+    }
+});

@@ -151,3 +151,33 @@ function showAbout() {
         backdrop: true
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('loggedIn')) {
+        //alert('You are already logged in!');
+       // window.location.href = 'index.html'; // เปลี่ยนเส้นทางไปยังหน้าอื่น
+    }else{
+        Swal.fire({
+            title: 'กรุณา Login เพื่อเข้าใช้งาน',
+            html: `
+            <strong>ระบบช่วยช่าง</strong> <br><br>
+            <strong>Version:</strong> 1.0.0<br>
+            <strong>License:</strong> MIT <br><br>
+          `,
+            icon: 'info',
+            showCloseButton: true,
+            confirmButtonText: 'Login',
+            background: '#282a36',
+            color: '#ffffff',
+            confirmButtonColor: '#00d1b2',
+            backdrop: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // เปลี่ยนเส้นทางไปยัง login.html เมื่อกดปุ่ม
+                window.location.href = 'login.html';
+            }else{
+                window.location.href = 'login.html';
+            }
+        });
+    }
+});
