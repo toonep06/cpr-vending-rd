@@ -148,7 +148,8 @@ function showAbout() {
         background: '#282a36',
         color: '#ffffff',
         confirmButtonColor: '#00d1b2',
-        backdrop: true
+        backdrop: true,
+        timer:5000
     });
 }
 
