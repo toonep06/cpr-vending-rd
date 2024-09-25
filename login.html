@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TechSolve</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-card {
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container login-container">
+        <div class="card login-card card-xl">
+            <div class="text-center">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <h2 class="mb-4">Login</h2>
+            </div>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                </div>
+                <div id="errorMessage" class="text-danger mb-3 d-none"></div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // ป้องกันการรีเฟรชหน้าเว็บ
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+
+            // ตรวจสอบว่าข้อมูลไม่ว่างเปล่า
+            if (username === '' || password === '') {
+                errorMessage.textContent = 'กรุณากรอกชื่อผู้ใช้และรหัสผ่านให้ครบถ้วน';
+                errorMessage.classList.remove('d-none');
+                return;
+            }
+
+            // ส่งข้อมูลเข้าสู่ระบบผ่าน API
+            fetch('https://script.google.com/macros/s/AKfycbw1uG7-Lxqu1qazFZaxEqT9y0eVSpaDYAUnv8tjjiewEhXi496Xzv6wMlz3a7s17oRqYA/exec', { // แทนที่ YOUR_SCRIPT_ID ด้วย Script ID ของคุณ
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    // บันทึก token ลงใน localStorage
+                    localStorage.setItem('sessionToken', data.token);
+                    // เปลี่ยนเส้นทางไปยังหน้า index.html
+                    window.location.href = 'index.html';
+                } else {
+                    // แสดงข้อความผิดพลาด
+                    errorMessage.textContent = data.message || 'เกิดข้อผิดพลาดในการเข้าสู่ระบบ';
+                    errorMessage.classList.remove('d-none');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                errorMessage.textContent = 'ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้';
+                errorMessage.classList.remove('d-none');
+            });
+        });
+    </script>
+</body>
+</html>
