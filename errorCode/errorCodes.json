@@ -1,0 +1,345 @@
+{
+    "errors": [
+      {
+        "code": "01",
+        "description": "ไม่พบสวิสซ์ล็อก (โซลินอยด์ล็อกประตู) ขณะปิดประตู",
+        "steps": [
+          {
+            "question": "ประตูรับสินค้าปิดสนิทหรือไม่?",
+            "image": "assets/pic1.jpg",
+            "answers": {
+              "ปิดสนิท": {
+              "action": "เช็คสายไฟของโซลินอยด์",
+              "image": "assets/pic2.jpg"
+              },
+              "ไม่ขาด": {
+                "question": "ตรวจสอบคาปาซิเตอร์ เสียหรือไม่?",
+                "image": "assets/pic3.jpg",
+                "answers": {
+                  "เสีย": {
+                    "action": "เปลี่ยนคาปาซิเตอร์",
+                    "image": "assets/pic4.jpg"
+                  },
+                  "ไม่เสีย": {
+                    "question": "ตรวจสอบขดลวดมอเตอร์ ขาดหรือไม่?",
+                    "image": "assets/pic5.jpg",
+                    "answers": {
+                      "ขาด": {
+                        "action": "เปลี่ยนมอเตอร์",
+                        "image": "assets/pic6.jpg"
+                      },
+                      "ไม่ขาด": {
+                        "action": "เปลี่ยนบอร์ดควบคุม",
+                        "image": "assets/pic7.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "101",
+        "description": "ระบบคอนโทรลไม่ทำงาน",
+        "steps": [
+          {
+            "question": "ไฟเข้าหรือไม่?",
+            "image": "assets/pic8.jpg",
+            "answers": {
+              "ไฟไม่เข้า": {
+                "action": "ตรวจสอบเบรกเกอร์และฟิวส์",
+                "image": "assets/pic9.jpg"
+              },
+              "ไฟเข้า": {
+                "action": "ตรวจสอบแผงวงจรคอนโทรล",
+                "image": "assets/pic10.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "102",
+        "description": "คอมเพรสเซอร์ไม่ทำงาน",
+        "steps": [
+          {
+            "question": "คอมเพรสเซอร์ร้อนหรือไม่?",
+            "image": "assets/pic11.jpg",
+            "answers": {
+              "ร้อน": {
+                "action": "รอให้คอมเพรสเซอร์เย็นแล้วตรวจสอบ",
+                "image": "assets/pic12.jpg"
+              },
+              "ไม่ร้อน": {
+                "action": "ตรวจสอบสตาร์ทคาปาซิเตอร์",
+                "image": "assets/pic13.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "103",
+        "description": "พัดลมไม่หมุน",
+        "steps": [
+          {
+            "question": "พัดลมติดขัดหรือไม่?",
+            "image": "assets/pic14.jpg",
+            "answers": {
+              "ติดขัด": {
+                "action": "ทำความสะอาดพัดลม",
+                "image": "assets/pic15.jpg"
+              },
+              "ไม่ติดขัด": {
+                "action": "ตรวจสอบมอเตอร์พัดลม",
+                "image": "assets/pic16.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "104",
+        "description": "ระบบทำความเย็นไม่ทำงาน",
+        "steps": [
+          {
+            "question": "น้ำยาทำความเย็นหมดหรือไม่?",
+            "image": "assets/pic17.jpg",
+            "answers": {
+              "หมด": {
+                "action": "เติมน้ำยาทำความเย็น",
+                "image": "assets/pic18.jpg"
+              },
+              "ไม่หมด": {
+                "action": "ตรวจสอบระบบท่อหรือตัวควบคุมอุณหภูมิ",
+                "image": "assets/pic19.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "201",
+        "description": "เครื่องแอร์มีเสียงดัง",
+        "steps": [
+          {
+            "question": "เสียงดังมาจากพัดลมหรือไม่?",
+            "image": "assets/pic20.jpg",
+            "answers": {
+              "ใช่": {
+                "action": "ตรวจสอบพัดลมและแกนหมุน",
+                "image": "assets/pic21.jpg"
+              },
+              "ไม่ใช่": {
+                "action": "ตรวจสอบคอมเพรสเซอร์",
+                "image": "assets/pic22.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "202",
+        "description": "น้ำแอร์หยด",
+        "steps": [
+          {
+            "question": "ท่อระบายน้ำอุดตันหรือไม่?",
+            "image": "assets/pic23.jpg",
+            "answers": {
+              "อุดตัน": {
+                "action": "ทำความสะอาดท่อระบายน้ำ",
+                "image": "assets/pic24.jpg"
+              },
+              "ไม่อุดตัน": {
+                "action": "ตรวจสอบถาดน้ำแอร์",
+                "image": "assets/pic25.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "203",
+        "description": "เครื่องแอร์เปิดไม่ติด",
+        "steps": [
+          {
+            "question": "ปลั๊กไฟหลวมไหม?",
+            "image": "assets/pic26.jpg",
+            "answers": {
+              "หลวม": {
+                "action": "เสียบปลั๊กให้แน่น",
+                "image": "assets/pic27.jpg"
+              },
+              "ไม่หลวม": {
+                "question": "เบรกเกอร์ตกหรือไม่?",
+                "image": "assets/pic28.jpg",
+                "answers": {
+                  "ตก": {
+                    "action": "ยกเบรกเกอร์ขึ้น",
+                    "image": "assets/pic29.jpg"
+                  },
+                  "ไม่ตก": {
+                    "action": "ตรวจสอบแผงวงจรไฟฟ้า",
+                    "image": "assets/pic30.jpg"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "204",
+        "description": "แอร์ไม่เย็น",
+        "steps": [
+          {
+            "question": "น้ำยาทำความเย็นเพียงพอหรือไม่?",
+            "image": "assets/pic31.jpg",
+            "answers": {
+              "ไม่พอ": {
+                "action": "เติมน้ำยาทำความเย็น",
+                "image": "assets/pic32.jpg"
+              },
+              "พอ": {
+                "action": "ตรวจสอบระบบคอมเพรสเซอร์",
+                "image": "assets/pic33.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "205",
+        "description": "แอร์มีน้ำแข็งเกาะ",
+        "steps": [
+          {
+            "question": "น้ำยาทำความเย็นหมดหรือไม่?",
+            "image": "assets/pic34.jpg",
+            "answers": {
+              "หมด": {
+                "action": "เติมน้ำยาทำความเย็น",
+                "image": "assets/pic35.jpg"
+              },
+              "ไม่หมด": {
+                "action": "ตรวจสอบคอมเพรสเซอร์",
+                "image": "assets/pic36.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "206",
+        "description": "แผงวงจรแอร์เสีย",
+        "steps": [
+          {
+            "question": "แผงวงจรมีไฟไหม?",
+            "image": "assets/pic37.jpg",
+            "answers": {
+              "ไม่มี": {
+                "action": "ตรวจสอบฟิวส์และเบรกเกอร์",
+                "image": "assets/pic38.jpg"
+              },
+              "มี": {
+                "question": "แผงวงจรตอบสนองปกติหรือไม่?",
+                "image": "assets/pic39.jpg",
+                "answers": {
+                  "ไม่ปกติ": {
+                    "action": "เปลี่ยนแผงวงจรใหม่",
+                    "image": "assets/pic40.jpg"
+                  },
+                  "ปกติ": {
+                    "action": "ตรวจสอบอุปกรณ์ต่อพ่วง",
+                    "image": "assets/pic41.jpg"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "207",
+        "description": "รีโมทแอร์ไม่ทำงาน",
+        "steps": [
+          {
+            "question": "ถ่านรีโมทหมดหรือไม่?",
+            "image": "assets/pic42.jpg",
+            "answers": {
+              "หมด": {
+                "action": "เปลี่ยนถ่านรีโมท",
+                "image": "assets/pic43.jpg"
+              },
+              "ไม่หมด": {
+                "action": "ตรวจสอบการเชื่อมต่อรีโมทกับเครื่อง",
+                "image": "assets/pic44.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "208",
+        "description": "รีโมทสั่งแอร์ไม่ได้",
+        "steps": [
+          {
+            "question": "สัญญาณรีโมทถึงแอร์หรือไม่?",
+            "image": "assets/pic45.jpg",
+            "answers": {
+              "ถึง": {
+                "action": "ตรวจสอบการตั้งค่ารีโมท",
+                "image": "assets/pic46.jpg"
+              },
+              "ไม่ถึง": {
+                "action": "เปลี่ยนมุมการสั่งงานรีโมท",
+                "image": "assets/pic47.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "209",
+        "description": "แอร์เปิดไม่ติด",
+        "steps": [
+          {
+            "question": "ไฟฟ้าเข้าเครื่องหรือไม่?",
+            "image": "assets/pic48.jpg",
+            "answers": {
+              "ไม่เข้า": {
+                "action": "ตรวจสอบสายไฟและเบรกเกอร์",
+                "image": "assets/pic49.jpg"
+              },
+              "เข้า": {
+                "action": "ตรวจสอบแผงควบคุมไฟฟ้า",
+                "image": "assets/pic50.jpg"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "210",
+        "description": "แอร์ตัดบ่อย",
+        "steps": [
+          {
+            "question": "เครื่องทำงานหนักหรือไม่?",
+            "image": "assets/pic51.jpg",
+            "answers": {
+              "ใช่": {
+                "action": "ลดความร้อนในห้อง",
+                "image": "assets/pic52.jpg"
+              },
+              "ไม่ใช่": {
+                "action": "ตรวจสอบคอมเพรสเซอร์และระบบไฟฟ้า",
+                "image": "assets/pic53.jpg"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

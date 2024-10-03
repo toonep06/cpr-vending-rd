@@ -1,0 +1,457 @@
+[
+    {
+        "Code": 30041225,
+        "Product": "TCN Plastic Spiral Clips",
+        "image": "/assets/itemTcn/image25.png"
+    },
+    {
+        "Code": 30042496,
+        "Product": "TCN Plastic Belt Clips",
+        "image": "/assets/itemTcn/image117.png"
+    },
+    {
+        "Code": 30042495,
+        "Product": " VENDING OMRON MICRO SWITCH V-156-1A5",
+        "image": "/assets/itemTcn/image111.png"
+    },
+    {
+        "Code": 30041212,
+        "Product": "TCN 11L - Wheel",
+        "image": "/assets/itemTcn/image9.png"
+    },
+    {
+        "Code": 30042494,
+        "Product": "TCN 11L - Switch",
+        "image": "/assets/itemTcn/image11.png"
+    },
+    {
+        "Code": 30042505,
+        "Product": "TCN Spiral 28 mm. - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30042506,
+        "Product": "TCN Spiral 28 mm. - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30037687,
+        "Product": "TCN Spiral 38 mm - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30037686,
+        "Product": "TCN Spiral 38 mm - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30037690,
+        "Product": "TCN Spiral 60 mm. - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30037688,
+        "Product": "TCN Spiral 60 mm. - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041234,
+        "Product": "TCN Spiral 71 mm. - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041235,
+        "Product": "TCN Spiral 71 mm. - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041237,
+        "Product": "TCN Spiral 80 mm. - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041236,
+        "Product": "TCN Spiral 80 mm. - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041238,
+        "Product": "TCN Spiral 105 mm. - Right",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041239,
+        "Product": "TCN Spiral 105 mm. - Left",
+        "image": "/assets/itemTcn/image2.png"
+    },
+    {
+        "Code": 30041213,
+        "Product": "TCN 11L - Fixer",
+        "image": "/assets/itemTcn/image1.png"
+    },
+    {
+        "Code": 30041167,
+        "Product": "TCN 11L - Cup",
+        "image": "/assets/itemTcn/image51.png"
+    },
+    {
+        "Code": 30041223,
+        "Product": "TCN White Panel",
+        "image": "/assets/itemTcn/image19.jpeg"
+    },
+    {
+        "Code": 30041224,
+        "Product": "TCN Transparent Panel",
+        "image": "/assets/itemTcn/image26.png"
+    },
+    {
+        "Code": 30041231,
+        "Product": "TCN Transparent Plastic Bar",
+        "image": "/assets/itemTcn/Picture1.png"
+    },
+    {
+        "Code": 30042497,
+        "Product": "TCN Spiral Motor",
+        "image": "/assets/itemTcn/image4.png"
+    },
+    {
+        "Code": 30042498,
+        "Product": "TCN Belt Conveyor Motor",
+        "image": "/assets/itemTcn/image3.png"
+    },
+    {
+        "Code": 30041217,
+        "Product": "TCN 11L - Door Switch",
+        "image": "/assets/itemTcn/image6.png"
+    },
+    {
+        "Code": 30042502,
+        "Product": "TCN Belts for Anti-Thief Panel",
+        "image": "/assets/itemTcn/image18.jpeg"
+    },
+    {
+        "Code": 30042501,
+        "Product": "TCN White Conveyor Belt for Elevator",
+        "image": "/assets/itemTcn/image10.jpeg"
+    },
+    {
+        "Code": 30042503,
+        "Product": "TCN Motor",
+        "image": "/assets/itemTcn/image13.png"
+    },
+    {
+        "Code": 30041226,
+        "Product": "TCN 11L - Belt Rail (Left)",
+        "image": "/assets/itemTcn/image36.png"
+    },
+    {
+        "Code": 30041215,
+        "Product": "TCN 11L - Drop Sensor (L)",
+        "image": "/assets/itemTcn/image7.png"
+    },
+    {
+        "Code": 30041216,
+        "Product": "TCN 11L - Drop Sensor (R)",
+        "image": "/assets/itemTcn/image7.png"
+    },
+    {
+        "Code": 30041169,
+        "Product": "TCN 11L - Pull Lock (L)",
+        "image": "/assets/itemTcn/image24.png"
+    },
+    {
+        "Code": 30041170,
+        "Product": "TCN 11L- Pull Lock (R)",
+        "image": "/assets/itemTcn/image24.png"
+    },
+    {
+        "Code": 30042504,
+        "Product": "TCN Motor for Elevator",
+        "image": "/assets/itemTcn/image38.jpeg"
+    },
+    {
+        "Code": 30042499,
+        "Product": "TCN Compressor Full Set",
+        "image": "/assets/itemTcn/image29.jpeg"
+    },
+    {
+        "Code": 30041222,
+        "Product": "TCN 11L - Full Set Tray (spiral 70/10)",
+        "image": "/assets/itemTcn/image28.jpeg"
+    },
+    {
+        "Code": 30042500,
+        "Product": "TCN Board 171111+160113",
+        "image": "/assets/itemTcn/image17.png"
+    },
+    {
+        "Code": 30041221,
+        "Product": "TCN 11L - Full Set Cooling",
+        "image": "/assets/itemTcn/image30.jpeg"
+    },
+    {
+        "Code": 30042507,
+        "Product": "TCN 22\" LCD SCREEN",
+        "image": "/assets/itemTcn/image31.jpeg"
+    },
+    {
+        "Code": 30042508,
+        "Product": "TCN 22\" Touch Screen",
+        "image": "/assets/itemTcn/image32.jpeg"
+    },
+    {
+        "Code": 30042509,
+        "Product": "TCN Full Set 22\" Touch Screen ",
+        "image": "/assets/itemTcn/image33.png"
+    },
+    {
+        "Code": 30042510,
+        "Product": "TCN 32\" LCD SCREEN",
+        "image": "/assets/itemTcn/image49.png"
+    },
+    {
+        "Code": 30041218,
+        "Product": "TCN 11L - 32\" Touch Screen",
+        "image": "/assets/itemTcn/image34.png"
+    },
+    {
+        "Code": 30042511,
+        "Product": "TCN 11L - Spiral Rail (Left)",
+        "image": "/assets/itemTcn/image35.png"
+    },
+    {
+        "Code": 30042512,
+        "Product": "TCN 11L - Spiral Rail (Right)",
+        "image": "/assets/itemTcn/image35.png"
+    },
+    {
+        "Code": 30042513,
+        "Product": "TCN Speaker",
+        "image": "/assets/itemTcn/image20.png"
+    },
+    {
+        "Code": 30042514,
+        "Product": "TCN Reset Board",
+        "image": "/assets/itemTcn/image27.png"
+    },
+    {
+        "Code": 30042515,
+        "Product": "TCN 11L - Glass Door",
+        "image": "/assets/itemTcn/image39.png"
+    },
+    {
+        "Code": 30042516,
+        "Product": "TCN 11L - Main Cabinet Lock",
+        "image": "/assets/itemTcn/image37.png"
+    },
+    {
+        "Code": 30042517,
+        "Product": "TCN Belt Conveyor",
+        "image": "/assets/itemTcn/image16.png"
+    },
+    {
+        "Code": 30042518,
+        "Product": "TCN Metal Elevator Driving Wheel",
+        "image": "/assets/itemTcn/image22.png"
+    },
+    {
+        "Code": 30042519,
+        "Product": "TCN Metal Elevator Passive Wheel",
+        "image": "/assets/itemTcn/image21.png"
+    },
+    {
+        "Code": 30042520, 
+        "Product": "TCN Plastic Elevator Driving Wheel",
+        "image": "/assets/itemTcn/image48.png"
+    },
+    {
+        "Code": 30042521,
+        "Product": "TCN Plastic Elevator Passive Wheel",
+        "image": "/assets/itemTcn/image23.jpeg"
+    },
+    {
+        "Code": 30042522,
+        "Product": "TCN Plastic Partition Driving Wheel",
+        "image": "/assets/itemTcn/image47.png"
+    },
+    {
+        "Code": 30041230,
+        "Product": "TCN Plastic Partition Passive Wheel",
+        "image": "/assets/itemTcn/image46.png"
+    },
+    {
+        "Code": 30042523,
+        "Product": "TCN 11L - LED Light Glass Door",
+        "image": "/assets/itemTcn/image45.jpeg"
+    },
+    {
+        "Code": 30042524,
+        "Product": "TCN 11L - Green Lamp Pickup Door",
+        "image": "/assets/itemTcn/image40.png"
+    },
+    {
+        "Code": 30043904,
+        "Product": "TCN Switching Power Supply",
+        "image": "/assets/itemTcn/image41.png"
+    },
+    {
+        "Code": 30043905,
+        "Product": "TCN Temperature Sensor",
+        "image": "/assets/itemTcn/image52.jpeg"
+    },
+    {
+        "Code": 30043690,
+        "Product": "TCN Aluminium Price Rail",
+        "image": "/assets/itemTcn/image53.png"
+    },
+    {
+        "Code": 30043906,
+        "Product": "Coin Pickup Baffle",
+        "image": "/assets/itemTcn/image42.png"
+    },
+    {
+        "Code": 30043907,
+        "Product": "TCN LED Light Tray ",
+        "image": "/assets/itemTcn/image55.jpeg"
+    },
+    {
+        "Code": 30043908,
+        "Product": "TCN Micro Switch with Roller",
+        "image": "/assets/itemTcn/image54.png"
+    },
+    {
+        "Code": 30043909,
+        "Product": "TCN 11L Main Cabinet Lock Tapered End",
+        "image": "/assets/itemTcn/image37.png"
+    },
+    {
+        "Code": 30043910,
+        "Product": "TCN 11L Main Cabinet Lock Cylinder",
+        "image": "/assets/itemTcn/image85.png"
+    },
+    {
+        "Code": 30043941,
+        "Product": "TCN Tray 8 Slots+LED Mounting (No Spiral)",
+        "image": "/assets/itemTcn/Picture2.jpg"
+    },
+    {
+        "Code": 30043942,
+        "Product": "TCN Tray 9 Slots+LED Mounting (No Spiral)",
+        "image": "/assets/itemTcn/Picture2.jpg"
+    },
+    {
+        "Code": 30043943,
+        "Product": "TCN Condenser Fan Motor",
+        "image": "/assets/itemTcn/hdphoto1.jpg"
+    },
+    {
+        "Code": 30043944,
+        "Product": "TCN Condenser Fan Blade",
+        "image": "/assets/itemTcn/image58.png"
+    },
+    {
+        "Code": 30043945,
+        "Product": "TCN Evaperator Fan Motor",
+        "image": "/assets/itemTcn/Picture3.jpg"
+    },
+    {
+        "Code": 30043946,
+        "Product": "TCN Spring Lock for Transparent Panel",
+        "image": "/assets/itemTcn/image59.jpeg"
+    },
+    {
+        "Code": 30043947,
+        "Product": "TCN Slot Driver Board 171111",
+        "image": "/assets/itemTcn/image61.jpeg"
+    },
+    {
+        "Code": 30043948,
+        "Product": "TCN Elevator Driver Board 170731",
+        "image": "/assets/itemTcn/image62.jpeg"
+    },
+    {
+        "Code": 30043949,
+        "Product": "TCN Board for Display Screen",
+        "image": "/assets/itemTcn/Picture4.jpg"
+    },
+    {
+        "Code": 30043950,
+        "Product": "TCN Elevator Flange Bearings",
+        "image": "/assets/itemTcn/image65.jpeg"
+    },
+    {
+        "Code": 30043951,
+        "Product": "TCN Elevator Circlip",
+        "image": "/assets/itemTcn/image66.jpeg"
+    },
+    {
+        "Code": 30043952,
+        "Product": "TCN Elevator Plastic Pulley (Male)",
+        "image": "/assets/itemTcn/image64.jpeg"
+    },
+    {
+        "Code": 30043953,
+        "Product": "TCN Clump Weight",
+        "image": "/assets/itemTcn/image83.png"
+    },
+    {
+        "Code": 30043954,
+        "Product": "TCN Cash Box",
+        "image": "/assets/itemTcn/image81.png"
+    },
+    {
+        "Code": 30043955,
+        "Product": "TCN  Anti-Thief Pulley",
+        "image": "/assets/itemTcn/image69.jpeg"
+    },
+    {
+        "Code": 30043956,
+        "Product": "TCN 11L Wiring Set for Green Board",
+        "image": "/assets/itemTcn/image86.jpeg"
+    },
+    {
+        "Code": 30043957,
+        "Product": "TCN Plastic Coin Insert",
+        "image": "/assets/itemTcn/image72.jpeg"
+    },
+    {
+        "Code": 30043958,
+        "Product": "TCN Spring Change Button",
+        "image": "/assets/itemTcn/image71.jpeg"
+    },
+    {
+        "Code": 30043959,
+        "Product": "TCN Pin Set of Pickup Door",
+        "image": "/assets/itemTcn/image73.jpeg"
+    },
+    {
+        "Code": 30043960,
+        "Product": "TCN Touch Screen Wire",
+        "image": "/assets/itemTcn/image74.jpeg"
+    },
+    {
+        "Code": 30043961,
+        "Product": "TCN Tray Wiring 10 Motor",
+        "image": "/assets/itemTcn/image76.jpeg"
+    },
+    {
+        "Code": 30043962,
+        "Product": "TCN Control Cabinet Pulley Track รางประตูVendingBBS45210W45มม24นิ้ว(1คู่)",
+        "image": "/assets/itemTcn/image78.jpeg"
+    },
+    {
+        "Code": 30043963,
+        "Product": "TCN Pull Lock Plunger",
+        "image": "/assets/itemTcn/image79.jpeg"
+    },
+    {
+        "Code": 30043964,
+        "Product": "TCN Elevator Plastic Pulley (Female)",
+        "image": "/assets/itemTcn/Picture5.png"
+    },
+    {
+        "Code": 30043965,
+        "Product": "TCN Metal Screw Bearings",
+        "image": "/assets/itemTcn/image84.png"
+    }
+]

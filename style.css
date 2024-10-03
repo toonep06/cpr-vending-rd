@@ -1,0 +1,194 @@
+/* พื้นหลังหลักของเว็บ */
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e5e5f5;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 2rem;
+    background-color: #1b1b2f;
+}
+
+/* ปรับให้ข้อความอยู่กึ่งกลางกับโลโก้ */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+    color: #00d1b2;
+    font-weight: bold;
+}
+
+/* ปุ่ม About */
+.btn-about {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #00d1b2;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+    background-color: #00bfa5;
+}
+
+/* หัวข้อหลัก (h1) */
+h1 {
+    font-size: 1.5rem;
+    color: #00d1b2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* ปุ่มค้นหา */
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #00d1b2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #00bfa5;
+}
+
+/* Card สำหรับแสดงข้อมูล */
+.card {
+    background-color: #282a36;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* ลด padding ภายใน card */
+    max-width: 100%;
+    
+}
+
+#descriptionSection, #questionSection {
+    margin-top: 10px;
+    padding: 1rem;
+    /*background-color: #3b3b52;*/
+    color: #ffffff;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
+#answerSection {
+    display: flex;
+    justify-content: space-between; /* จัดปุ่มให้ห่างกันและอยู่ที่ด้านซ้าย-ขวา */
+    width: 100%;
+}
+
+#answerSection button {
+    flex: 0 1 45%;  /* กำหนดให้แต่ละปุ่มมีขนาด 45% ของพื้นที่ */
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #00d1b2;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* ปรับระยะห่างระหว่างบรรทัด */
+p {
+    margin-bottom: 10px;
+    line-height: 1.5; /* ปรับระยะห่างระหว่างบรรทัดให้เหมาะสม */
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* ปุ่มคำตอบ */
+#answerSection button {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #00d1b2;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#answerSection button:hover {
+    background-color: #00bfa5 ;
+}
+
+/* ปิดการแสดง card เมื่อไม่มีข้อมูล */
+#contentSection.d-none {
+    display: none;
+}
+
+#descriptionSection:empty,
+#questionSection:empty,
+#answerSection:empty,
+#imageSection:empty {
+    display: none;
+}
+
+/* รูปภาพ */
+/* กำหนดรูปภาพทั่วไป ยกเว้นโลโก้ */
+img:not(.logo) {
+    width: 60%;          /* ปรับขนาดความกว้างให้ครอบคลุมพื้นที่ที่กำหนด */
+    height: auto;        /* ปรับความสูงให้เป็นอัตโนมัติเพื่อรักษาสัดส่วนของภาพ */
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* การจัดการโลโก้ */
+.logo {
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+.custom-green {
+    color: #00FF00 !important;
+    font-weight: bold;
+}
+#itemTable {
+    border-width: 1px; /* Adjust table border width */
+    border-style: solid;
+    border-color: rgb(215, 214, 214); /* You can change the color */
+}
+
+/* Custom cell border size */
+#itemTable th, #itemTable td {
+    border-width: 1px; /* Adjust cell border width */
+    border-style: solid;
+    border-color: rgb(222, 216, 216); /* You can change the color */
+}

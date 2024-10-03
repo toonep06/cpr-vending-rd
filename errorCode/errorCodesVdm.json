@@ -1,0 +1,24 @@
+{
+    "errors": [
+        {
+            "code": "103",
+            "description": "พัดลมไม่หมุน",
+            "steps": [
+                {
+                    "question": "พัดลมติดขัดหรือไม่?",
+                    "image": "assets/pic14.jpg",
+                    "answers": {
+                        "ติดขัด": {
+                            "action": "ทำความสะอาดพัดลม",
+                            "image": "assets/pic15.jpg"
+                        },
+                        "ไม่ติดขัด": {
+                            "action": "ตรวจสอบมอเตอร์พัดลม",
+                            "image": "assets/pic16.jpg"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
